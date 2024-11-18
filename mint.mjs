@@ -1,4 +1,5 @@
 import { applyDoubleCborEncoding, applyParamsToScript, Blockfrost, Data, fromText, Lucid } from "lucid-cardano";
+import { getValidators } from "./validator.mjs";
 
 const lucid = await Lucid.new(
   new Blockfrost("https://cardano-preprod.blockfrost.io/api/v0", "preprodaDCuJ1u8d8yNWBBjWcc5NCGJLr9mNZeJ"),
@@ -16,6 +17,8 @@ const TokenRedeemer = TokenType;
 let {
   mintMintingPolicy
 } = getValidators();
+
+console.log("mint", mintMintingPolicy);
 
 const mintingPolicyToken = {
   type: "PlutusV2",
