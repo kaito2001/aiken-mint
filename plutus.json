@@ -1,0 +1,71 @@
+{
+  "preamble": {
+    "title": "0xkai/mint-token",
+    "description": "Aiken contracts for project '0xkai/mint-token'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.6+18054ee"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "mint.token.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/mint~1TokenRedeemer"
+        }
+      },
+      "parameters": [
+        {
+          "title": "code_word",
+          "schema": {
+            "$ref": "#/definitions/ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "588801010032323232323223225333004323232323253330093370e900018051baa001132533300a3370e900018059baa00313232533300f301100213371e6eb8c040c038dd50028050b1bae300f001300c37540062c6eb8c034c02cdd50008b1806180680198058011805001180500098031baa00114984d958dd7000ab9a5573aaae7955cfaba15745",
+      "hash": "1e9d489d3126d707089411355c6bf9b761f00a861d6103a899f523d2"
+    },
+    {
+      "title": "mint.token.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "code_word",
+          "schema": {
+            "$ref": "#/definitions/ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "588801010032323232323223225333004323232323253330093370e900018051baa001132533300a3370e900018059baa00313232533300f301100213371e6eb8c040c038dd50028050b1bae300f001300c37540062c6eb8c034c02cdd50008b1806180680198058011805001180500098031baa00114984d958dd7000ab9a5573aaae7955cfaba15745",
+      "hash": "1e9d489d3126d707089411355c6bf9b761f00a861d6103a899f523d2"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "mint/TokenRedeemer": {
+      "title": "TokenRedeemer",
+      "anyOf": [
+        {
+          "title": "TokenRedeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "msg",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
