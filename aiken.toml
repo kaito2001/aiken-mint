@@ -1,7 +1,7 @@
 name = "0xkai/mint-token"
 version = "0.0.0"
 compiler = "v1.1.6"
-plutus = "v3"
+plutus = "v2"
 license = "Apache-2.0"
 description = "Aiken contracts for project '0xkai/mint-token'"
 
