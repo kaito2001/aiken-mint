@@ -1,6 +1,6 @@
 name = "0xkai/mint-token"
 version = "0.0.0"
-compiler = "v1.1.6"
+compiler = "v1.0.26-alpha"
 plutus = "v2"
 license = "Apache-2.0"
 description = "Aiken contracts for project '0xkai/mint-token'"
@@ -12,7 +12,7 @@ platform = "github"
 
 [[dependencies]]
 name = "aiken-lang/stdlib"
-version = "v2.1.0"
+version = "1.8.0"
 source = "github"
 
 [config]
